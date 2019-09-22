@@ -57,7 +57,10 @@
 
 							$('#install-btn').text('Please wait...');
 
-							var url = $("#url").val();
+							var shopURL = $("#url").val();
+							var removeHttps = shopURL.replace('https://','');
+							var removeHttp = removeHttps.replace('http://','');
+							var url = removeHttp.replace('/','');
 							var app = 'https://addon-app.appspot.com/auth?shop=' + url;
 							window.location = app;
 						}
