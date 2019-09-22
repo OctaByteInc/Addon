@@ -1,2 +1,2 @@
-# themeaddon.github.io
+# Theme Addon
 Theme addon installation app
